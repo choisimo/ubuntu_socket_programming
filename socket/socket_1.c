@@ -6,6 +6,9 @@
 
 int main(){
 	
+	/*
+	 * 파일 입출력 
+	 * */
 	int open(const char *pathname, int flags);
 	int open(const char *pathname, int flags, mode_t mode);
 
