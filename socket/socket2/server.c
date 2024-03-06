@@ -12,6 +12,16 @@
 int client_socket[max_client];
 int client_count = 0;
 
+// arg : 쓰레드 생성할 때 값 입력
+void * thread1(void * arg){
+	
+	prinf("arg: %d\n", (int) arg);
+	while(1) {
+		prinf("thread1 a[%d]\n", ++a);
+		sleep(1);
+	}
+}
+
 int main(){
 	
 	int sockfd;
